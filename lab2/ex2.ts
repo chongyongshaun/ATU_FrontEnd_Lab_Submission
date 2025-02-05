@@ -5,7 +5,7 @@ interface TaskManager {
     deleteTask(task: string): number;
 } //an interface for the todolist class im about to create
 
-class ToDoList implements TaskManager {
+export class ToDoList implements TaskManager {
     tasks: string[] = [];  
     //adds tasks
     addTask =(task : string) : number => {
@@ -28,5 +28,6 @@ class ToDoList implements TaskManager {
         console.log("Task has been deleted.")
         return tasks.length
     }
-  }
+}
+
   

@@ -1,16 +1,16 @@
-<!-- Double-click event binding to call onStarDblClick method -->
+<!--double click event binding to call onStarDblClick method -->
 <button (dblclick)="onStarDblClick()">
   <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Red_star.svg" height="42" width="42">
 </button>
 <br>
-<!-- Conditional rendering using *ngIf directive -->
+<!-- conditional rendering using *ngIf directive -->
 <h2 *ngIf="showStarText">Look at the star</h2>
 
-<!-- Click event binding to call increment method -->
+<!-- click event binding to call increment method -->
 <button (click)="increment()">Press Me</button>
 <!-- Display the count variable -->
 <h2>The number of times the button has been pressed is: {{count}}</h2>
 
-<!-- Render the ListComponent -->
+<!-- render the component i made -->
 <app-listcomponent></app-listcomponent>
 <router-outlet />
